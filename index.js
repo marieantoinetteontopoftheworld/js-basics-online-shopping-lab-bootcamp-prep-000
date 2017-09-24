@@ -52,9 +52,7 @@ function viewCart() {
   }
   console.log(statement);*/
 
-  var cartFilled = cart.length;
-
-  if (!cartFilled) {
+  if (cart.length === 0) {
     console.log('Your shopping cart is empty.')
   }
 
@@ -68,7 +66,11 @@ function viewCart() {
     itemsAndPrices.push(`${item} at $${price}`);
   }
 
-  itemsAndPrices = itemsAndPrices.join(', ');
+  if (cart.length > 2) {
+    itemsAndPrices = itemsAndPrices.join(', ');
+  } else if {cart.length === 2} {
+    itemsAndPrices = itemsAndPrices.join(' and ');
+  }
 
   console.log(`In your cart, you have ${itemsAndPrices}.`)
 }
