@@ -68,6 +68,8 @@ function viewCart() {
     itemsAndPrices.push(`${item} at $${price}`);
   }
 
+  itemsAndPrices.join(', ');
+
   console.log(`In your cart, you have ${itemsAndPrices}.`)
 }
 
