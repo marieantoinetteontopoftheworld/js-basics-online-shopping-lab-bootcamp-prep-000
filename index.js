@@ -21,7 +21,7 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var statement = '';
+  /*var statement = '';
   if (cart.length > 0) {
     statement = 'In your cart, you have ';
     cart.forEach(function(item, i) {
@@ -49,8 +49,14 @@ function viewCart() {
     });
   } else {
     statement = 'Your shopping cart is empty.';
+  } 
+  console.log(statement);*/
+
+  var cartFilled = cart.length;
+
+  if (!cartFilled) {
+    console.log('Your shopping cart is empty.')
   }
-  console.log(statement);
 }
 
 function total() {
