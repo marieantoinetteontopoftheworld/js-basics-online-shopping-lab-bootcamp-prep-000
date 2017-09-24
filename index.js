@@ -68,7 +68,7 @@ function viewCart() {
 
   if (cart.length > 2) {
     itemsAndPrices = itemsAndPrices.join(', ');
-  } else if {cart.length === 2} {
+  } else if (cart.length === 2) {
     itemsAndPrices = itemsAndPrices.join(' and ');
   }
 
