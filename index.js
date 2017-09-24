@@ -52,11 +52,15 @@ function viewCart() {
   }
   console.log(statement);*/
 
-  var cartFilled = cart.length;
+  let cartFilled = cart.length;
 
   if (!cartFilled) {
     console.log('Your shopping cart is empty.')
   }
+
+  let itemsAndPrices = [];
+
+  
 }
 
 function total() {
