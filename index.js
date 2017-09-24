@@ -107,7 +107,7 @@ function removeFromCart(item) {
       console.log('That item is not in your cart.');
     }
   }*/
-  
+
   cart.forEach(function(cartItem, i) {
     if (cartItem.hasOwnProperty(item)) {
       delete cart[i];
