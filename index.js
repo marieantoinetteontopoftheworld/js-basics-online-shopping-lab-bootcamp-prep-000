@@ -111,7 +111,8 @@ function removeFromCart(item) {
 
   cart.forEach(function(cartItem, i) {
     if (cartItem.hasOwnProperty(item)) {
-      delete cart[i];
+      //delete cart[i];
+      cart = cart.slice(0, i).concat(cart.slice(i + 1));
       itemInCart = true;
     }
   });
