@@ -117,7 +117,7 @@ function removeFromCart(item) {
   });
 
   if (!itemInCart) {
-    console.log('That item is not in your cart. ');
+    console.log('That item is not in your cart.');
   }
 
   return cart;
@@ -151,4 +151,7 @@ function placeOrder(cardNumber) {
 addToCart('mango');
 addToCart('nuts');
 addToCart('quince');
+viewCart();
+
+removeFromCart('mango');
 viewCart();
