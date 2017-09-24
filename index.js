@@ -135,5 +135,6 @@ function placeOrder(cardNumber) {
   cart = []
 }
 
+addToCart('nuts');
 addToCart('quince');
 viewCart();
