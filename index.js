@@ -91,7 +91,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if (item && item !== null && item !== undefined) {
+  /*if (item && item !== null && item !== undefined) {
     var count = 0;
 
     cart.forEach(function(cartItem, i) {
@@ -106,7 +106,14 @@ function removeFromCart(item) {
     if (count === cart.length) {
       console.log('That item is not in your cart.');
     }
-  }
+  }*/
+  cart.forEach(function(cartItem, i) {
+    if (cartItem.hasOwnProperty(item)) {
+      delete cart[i];
+    } else {
+      console.log('That item is not in your cart.');
+    }
+  });
 
   return cart;
 }
