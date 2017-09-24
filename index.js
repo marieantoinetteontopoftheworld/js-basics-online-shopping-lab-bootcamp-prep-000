@@ -49,7 +49,7 @@ function viewCart() {
     });
   } else {
     statement = 'Your shopping cart is empty.';
-  } 
+  }
   console.log(statement);*/
 
   var cartFilled = cart.length;
@@ -119,7 +119,4 @@ function placeOrder(cardNumber) {
   cart = []
 }
 
-addToCart('mango');
-addToCart('nuts');
-addToCart('quince');
 viewCart();
