@@ -52,15 +52,23 @@ function viewCart() {
   }
   console.log(statement);*/
 
-  let cartFilled = cart.length;
+  var cartFilled = cart.length;
 
   if (!cartFilled) {
     console.log('Your shopping cart is empty.')
   }
 
-  let itemsAndPrices = [];
+  var itemsAndPrices = [];
 
-  
+  for (var i = 0; i < cart.length; i++) {
+    var itemAndPrice = cart[i];
+    var item = itemAndPrice.keys()[0]; // this really assumes there is only one key value pair, or it's the first key value pair I am interseted in
+    var price = itemAndPrice[item];
+
+    itemsAndPrices.push(`${item} at $${price}`);
+  }
+
+  console.log(`In your cart, you have ${itemsAndPrices}.`)
 }
 
 function total() {
