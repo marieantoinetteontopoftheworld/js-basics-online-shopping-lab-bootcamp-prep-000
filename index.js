@@ -107,12 +107,12 @@ function removeFromCart(item) {
       console.log('That item is not in your cart.');
     }
   }*/
-  var itemInCart = true;
+  var itemInCart = false;
 
   cart.forEach(function(cartItem, i) {
     if (cartItem.hasOwnProperty(item)) {
       delete cart[i];
-      itemInCart = false;
+      itemInCart = true;
     }
   });
 
