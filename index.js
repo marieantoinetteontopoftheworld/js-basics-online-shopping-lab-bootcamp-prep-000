@@ -62,7 +62,7 @@ function viewCart() {
 
   for (var i = 0; i < cart.length; i++) {
     var itemAndPrice = cart[i];
-    var item = itemAndPrice.keys()[0]; // this really assumes there is only one key value pair, or it's the first key value pair I am interseted in
+    var item = Object.keys(itemAndPrice)[0]; // this really assumes there is only one key value pair, or it's the first key value pair I am interseted in
     var price = itemAndPrice[item];
 
     itemsAndPrices.push(`${item} at $${price}`);
