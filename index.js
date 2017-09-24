@@ -67,6 +67,7 @@ function viewCart() {
   }
 
   if (cart.length > 2) {
+    itemsAndPrices[cart.length - 1] += 'and '
     itemsAndPrices = itemsAndPrices.join(', ');
   } else if (cart.length === 2) {
     itemsAndPrices = itemsAndPrices.join(' and ');
